@@ -7,7 +7,34 @@ package _01_random._5_magic_8_ball;
 import java.util.Random;
 
 public class Magic8Ball {
+	public static void main(String[] args) {
+			
+		Random randomMaker = new Random();
+			
+		int randomNumber = randomMaker.nextInt(5);
+			
+	if (randomNumber == 0){
+		System.out.println("Yes");
+	}
+	
+	if (randomNumber == 1){
+		System.out.println("No");
+	}
+	
+	if (randomNumber == 2){
+		System.out.println("Maybe You should ask google?");
+	}
+	
+	if (randomNumber == 3){
+		System.out.println("I have 0 Idea, Please Ask Again Later");
+	}
+	
+	
+		
+		
 
+	}
+}
 	// 1. Make a main method that includes all the steps below
 
 	// 2. Get the user to enter a question for the 8 ball to answer
@@ -34,4 +61,4 @@ public class Magic8Ball {
 
 	// -- write your own answer
 
-}
+
