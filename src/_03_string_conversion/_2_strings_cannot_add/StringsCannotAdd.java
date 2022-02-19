@@ -5,21 +5,25 @@ import javax.swing.JOptionPane;
 public class StringsCannotAdd {
 
 		// 1) Make a main method that includes all the steps below…. 
+		public static void main(String[] args) {
+			String fourAsString = JOptionPane.showInputDialog("Please enter the number 4");
 		
 			// 2) Ask the user to enter number 4 and hold it in the variable fourAsString 
-			
+			String sixAsString = JOptionPane.showInputDialog("Please enter in the number 6");
+				
 			// 3) Ask the user to enter number 6 and hold it in the variable sixAsString 
 			
+			String fiveAsString = JOptionPane.showInputDialog("Please enter in the number 5");
 			// 4) Print the addition of fourAsString and sixAsString using JOptionPane 
-			
+			JOptionPane.showMessageDialog(null, fourAsString + sixAsString + fiveAsString);
 			// Did you notice 46 instead of 4 + 6 = 10?
-			
+			int fourAsInt = Integer.parseInt(fourAsString);
 			// 5) Ask the user to enter number 5 and hold it in the variable fiveAsString 
-			
+			int sixAsInt = Integer.parseInt(sixAsString);
 			// 6) Print the addition of the variables fourAsString, sixAsString, and fiveAsString 
-			
+			int fiveAsInt = Integer.parseInt(fiveAsString);
 			//Did you notice 456 instead of 4 + 6 + 5 = 15?
-			
+			JOptionPane.showMessageDialog(null, fourAsInt + sixAsInt + fiveAsInt);
 			// Insert fourAsString inside the parenthesis of Integer.parseInt() and set the method equal to fourAsInt
 			// Hint: int fourAsInt = Integer.parseInt(fourAsString);
 			
@@ -34,4 +38,5 @@ public class StringsCannotAdd {
 			// 10) Print the addition of fourAsInt, sixAsInt, and fiveAsInt using JOptionPane 
 			
 			// Is your value now 15 instead of 465?
+}
 }
